@@ -1,0 +1,374 @@
+@import url(./root.css);
+
+* {
+    list-style-type: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.btns {
+    text-transform: capitalize;
+    border-radius: 12px;
+    background: #02cdcf;
+    padding: 18px 32px;
+    gap: 10px;
+}
+
+.btns:hover {
+    color: #02cdcf;
+    background-color: #ffffff;
+}
+
+.hero_bg_img {
+    background-image: url(../image/bgimg.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.bg_img {
+    background-image: url(../image/globl.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navicon {
+    z-index: 1900;
+    cursor: pointer;
+}
+
+.underline_nav::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    background-color: #02cdcf !important;
+    transition: all 300ms;
+    margin: 0 auto;
+}
+
+.underline_nav:hover::after {
+    width: 100%;
+}
+
+.mrtop-40 {
+    margin-top: -60px;
+}
+
+.cards1 {
+    border-radius: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
+    border: 1px solid #fcfcfc;
+    background: lightgray 50% / cover no-repeat, rgba(255, 255, 255, 0.04);
+    max-width: 1320px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-top: 80px;
+
+    border: 2px solid grey;
+    border-radius: 30px;
+    height: 810px;
+    overflow-y: scroll;
+}
+
+.cards1::-webkit-scrollbar {
+    display: none;
+}
+
+.pt-150 {
+    padding-top: 50px;
+}
+
+.boxs1 {
+    border-radius: 16px;
+    border: 1px solid rgba(252, 252, 252, 0.4);
+    background-color: #fff;
+    box-shadow: 1px 1px 24px 1px rgba(0, 0, 0, 0.1);
+    width: 364px;
+    padding: 24px;
+}
+
+.boxs2 {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-radius: 16px;
+    border: 1px solid rgba(252, 252, 252, 0.4);
+    background: #fff;
+    box-shadow: 1px 1px 24px 1px rgba(0, 0, 0, 0.1);
+    width: 364px;
+    padding: 24px;
+    height: 364px;
+    transform: translateY(102%);
+}
+
+.sliderss2 {
+    transform: translateY(25%);
+}
+
+.sliderss {
+    z-index: 2;
+}
+
+.sliderss .slick-list {
+    overflow: visible;
+    padding: 0 20% 0 0;
+    position: relative;
+    /* z-index: -1; */
+}
+
+.pb_150 {
+    padding-bottom: 150px;
+    padding-top: 90px;
+}
+
+.sliderss .slick-list::after {
+    content: " ";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 4000px;
+    right: 100%;
+    background-color: black;
+}
+
+.box1 {
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0px 4px 20px 0px rgba(2, 205, 207, 0.16);
+    display: flex;
+    width: 340px;
+    height: 220px;
+    padding: 53px 43px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero2_bg_img {
+    background-image: url(../image/ai-img.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imggrupf {
+    border-radius: 100%;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.ellips {
+    color: #02cdcf;
+    filter: blur(196px);
+    width: 228px;
+    height: 245px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #02cdcf;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background-color: #02cdcf;
+    top: 0;
+    bottom: 20px;
+    left: 0;
+    margin-left: -3px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/* timelineContainer around content */
+.timelineContainer {
+    padding: 0px 12px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+}
+
+/* The circles on the timeline */
+.timelineContainer::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: #ffffff;
+    border: 4px solid #ffffff;
+    top: 0;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the timelineContainer to the right */
+.right {
+    left: 0;
+}
+
+/* Fix the circle for timelineContainers on the right side */
+
+.left::after {
+    left: -12px;
+    top: 32%;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background-color: #fff;
+    position: relative;
+    border-radius: 6px;
+}
+
+.roadmap {
+    height: 490px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.roadmap::-webkit-scrollbar {
+    display: none;
+}
+
+.ellips_right {
+    position: absolute;
+    width: 228px;
+    height: 228px;
+    background-color: #02CDCF;
+    filter: blur(196px);
+    right: 0;
+    top: 67%;
+
+}
+
+.ellips_right1 {
+    position: absolute;
+    width: 228px;
+    height: 228px;
+    background-color: #02CDCF;
+    filter: blur(196px);
+    right: 0;
+    top: 6%;
+
+}
+
+.ellips_left {
+    position: absolute;
+    width: 228px;
+    height: 228px;
+    flex-shrink: 0;
+    background-color: #02CDCF;
+    filter: blur(196px);
+    left: 0;
+
+
+}
+
+.ab {
+    position: absolute;
+    right: 0;
+
+
+}
+
+.ab-left {
+    position: absolute;
+    left: 0;
+    top: -1%;
+
+
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: #6A6F6E;
+
+}
+
+@media (max-width: 992px) {
+    .hero_bg_img {
+        background-image: url(../image/bgimg.gif);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .md_screen {
+        left: -100% !important;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        align-items: center;
+        text-align: center;
+        justify-content: center !important;
+        background-color: black !important;
+        width: 100% !important;
+        /* height: 100% !important; */
+        z-index: 1 !important;
+        transition: 800ms;
+        min-height: 100vh;
+        gap: 50px !important;
+    }
+
+    label[for="checkbox"] {
+        height: 26px;
+        width: 28px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    label[for="checkbox"]>span {
+        height: 6px;
+        width: 38px;
+        border-radius: 40px;
+        background-color: #ffffff;
+    }
+
+    .rotates1 {
+        transform: rotate(45deg);
+        margin-top: 12px;
+    }
+
+    .rotates2 {
+        display: none;
+    }
+
+    .rotates3 {
+        transform: rotate(145deg);
+        margin-bottom: 12px;
+    }
+
+    .start-0 {
+        left: 0;
+    }
+
+}
+
+@media (min-width:992px) {
+    .pt-150 {
+        padding-top: 150px;
+    }
+}

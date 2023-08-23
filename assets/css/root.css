@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@font-face {
+    font-family: Recharge;
+    src: url("../fonts/recharge\ bd.otf");
+}
+
+:root {
+    /* font-size */
+    --fs_xsm: 13px;
+    --fs_sm: 15px;
+    --fs_md: 16px;
+    --fs_lg: 18px;
+    --fs_xl: 25px;
+    --fs_xxl: 30px;
+    --fs_2xl: 45px;
+    /* color */
+    --bg_black: #040404;
+    --white: #fff;
+    --bg_green: #02cdcf;
+    --green1: #02cdcf;
+    --black: #0b0a0a;
+    --text_color: #b4b4b4;
+}
+
+/* font-size */
+
+.fs_xsm {
+    font-size: var(--fs_xsm);
+}
+
+.fs_sm {
+    font-size: var(--fs_sm);
+}
+
+.fs_md {
+    font-size: var(--fs_md);
+}
+
+.fs_lg {
+    font-size: var(--fs_lg);
+}
+
+.fs_xl {
+    font-size: var(--fs_xl);
+}
+
+.fs_xxl {
+    font-size: var(--fs_xxl);
+}
+
+.fs_2xl {
+    font-size: var(--fs_2xl);
+}
+
+/* color */
+.bg_black {
+    background-color: var(--bg_black);
+}
+
+.black {
+    color: var(--black);
+}
+
+.green1 {
+    color: var(--green1);
+}
+
+.bg_green {
+    background-color: var(--bg_green);
+}
+
+.white {
+    color: var(--white);
+}
+
+.text_color {
+    color: var(--text_color);
+}
+
+/* font-weight */
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600 !important;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.ff_Recharge {
+    font-family: Recharge !important;
+}
+
+.ff-Poppins {
+    font-family: Poppins !important;
+}
+
+@media (min-width: 768px) {
+    :root {
+        --fs_xsm: 16px;
+        --fs_sm: 18px;
+        --fs_md: 20px;
+        --fs_lg: 24px;
+        --fs_xl: 32px;
+        --fs_xxl: 40px;
+        --fs_2xl: 60px;
+    }
+}
